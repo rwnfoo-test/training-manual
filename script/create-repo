@@ -57,7 +57,7 @@ function CloneRepo() {
   # Check the root
   if [[ "$ROOT_URL" == "github.com" ]]; then
     # Clone it
-    git clone --bare "https://github.com/githubtraining/${TYPE}" "${REPO_NAME}" >>log.out 2>&1
+    git clone --bare "https://github.com/rwnfoo-test/${TYPE}" "${REPO_NAME}" >>log.out 2>&1
   else
     echo "Cloning from Enterprise Instance"
     # Clone it
