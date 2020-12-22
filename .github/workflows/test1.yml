@@ -28,6 +28,6 @@ jobs:
 
       - name: Use token
         env:
-          TOKEN: ${{ steps.generate_token.outputs.token }}
+          TEACHER_PAT: ${{ steps.generate_token.outputs.token }}
         run: |
            ./script/create-repo caption-this "rwnfoo-migargo-test" "test-bot"
