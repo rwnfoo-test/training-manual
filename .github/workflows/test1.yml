@@ -29,5 +29,7 @@ jobs:
       - name: Use token
         env:
           TEACHER_PAT: ${{ steps.generate_token.outputs.token }}
+          INSTANCE_URL: 'api.github.com'
+          CLASS_ORG: 'rwnfoo-test'
         run: |
            ./script/create-repo caption-this "rwnfoo-migargo-test" "test-bot"
